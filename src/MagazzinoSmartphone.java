@@ -42,10 +42,10 @@ public class MagazzinoSmartphone {
     }
 
     // Metodo che restituisce l'array di Smartphone
-    public Smartphone[] getSmartphonesArray() {
-        Smartphone[] smartphoneArray = new Smartphone[count];
-        System.arraycopy(smartphones, 0, smartphoneArray, 0, count);
-        return smartphoneArray;
+    public ArrayList<Smartphone> getSmartphonesArrayList() {
+        ArrayList <Smartphone> smartphoneArrayList = new ArrayList<Smartphone>(count);
+        smartphoneArrayList.clone();
+        return smartphoneArrayList;
     }
 
     // Metodo che ricerca uno Smartphone per Brand
